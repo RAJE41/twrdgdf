@@ -10,7 +10,7 @@ bot = Bot(token=os.environ.get('TOKEN'), parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot, storage=MemoryStorage())
 admin = os.environ.get('ADMIN')
 conn = sqlite3.connect('users.db'); cur = conn.cursor()
-codes = []
+codes = ["1"]
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
