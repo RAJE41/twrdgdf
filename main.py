@@ -8,7 +8,7 @@ import sqlite3, asyncio, os
 #БОТ
 bot = Bot(token=os.environ.get('TOKEN'), parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot, storage=MemoryStorage())
-admin = os.environ.get('ADMIN')
+admin = int(os.environ.get('ADMIN'))
 conn = sqlite3.connect('users.db'); cur = conn.cursor()
 codes = []
 from aiogram.dispatcher import FSMContext
