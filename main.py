@@ -108,8 +108,8 @@ async def main():
             state = dp.current_state(user=i)
             await state.set_state("Allow")
 
-    state = dp.current_state(user=admin)
-    await state.set_state("admin")
+    #state = dp.current_state(user=admin)
+    #await state.set_state("admin")
 
 if __name__ == "__main__":
     ioloop = asyncio.get_event_loop()
