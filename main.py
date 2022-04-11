@@ -59,7 +59,7 @@ async def keys(message: types.Message):
 
 @dp.message_handler(state=['Allow', 'admin'], commands="start")
 async def start(message: types.Message):
-    await message.reply("Привет! Можешь брать прокси в этом боте бесплатно 😎")
+    await message.reply("Привет! Можешь брать прокси в этом боте бесплатно 😎", reply_markup=keyboard.kb)
 
 
 # ЗАПУСК
